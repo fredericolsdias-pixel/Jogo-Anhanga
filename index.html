@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <meta name="generator" content="Geany 1.27" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="stylesheet" href="style.css" >
+        <title>Jogo dos Animais</title>
+    </head>
+    <body>
+        <div id="contadorAnimais" class="hidden">Animais Libertados: <span id="contador">0</span>/<span id="total">7</span></div>
+        <div id="startScreen">Clique para começar</div>
+        
+        <div id="dialogBox" class="hidden">
+            <div id="dialogText"></div>
+            <div id="dialogNext">[ENTER] para continuar</div>
+        </div>
+        
+        <div id="quizBox" class="hidden">
+            <div id="quizText"></div>
+            <div id="quizOptions">
+                <button class="quiz-option" data-index="0"></button>
+                <button class="quiz-option" data-index="1"></button>
+                <button class="quiz-option" data-index="2"></button>
+                <button class="quiz-option" data-index="3"></button>
+            </div>
+            <div id="quizFeedback"></div>
+            <div id="quizNext">Clique em uma opção para responder</div>
+        </div>
+        <div id="vitoriaScreen" class="hidden">
+    <div id="vitoriaText">🎉 Parabéns! Você libertou 5 animais!</div>
+    <div id="vitoriaSubtext">Você avançou para a próxima fase!</div>
+    <div id="vitoriaNext">Pressione ESPAÇO para continuar</div>
+</div>
+
+<div id="derrotaScreen" class="hidden">
+    <div id="derrotaText">😔 Você não conseguiu libertar animais suficientes</div>
+    <div id="derrotaSubtext">Liberte pelo menos 5 animais para avançar!</div>
+    <div id="derrotaNext">Pressione ESPAÇO para tentar novamente</div>
+</div>
+<!-- Adicione após as outras telas -->
+<div id="fogoContador" class="hidden">
+    Fogos Apagados: <span id="fogosApagados">0</span>/<span id="totalFogos">3</span>
+</div>
+        
+        <canvas width="640" height="640" style="border: solid;"></canvas>
+        <script src="script.js"></script>
+    </body>
+</html>
